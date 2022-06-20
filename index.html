@@ -118,8 +118,8 @@
     </div>
   </section>
 
- <!-- MODALS -->
- <!-- \\\\\\\\\\\\\\\\\\|||||||||||||||| -->
+  <!-- MODALS -->
+  <!-- \\\\\\\\\\\\\\\\\\|||||||||||||||| -->
   <!-- ADD POST MODAL -->
   <div class="modal fade" id="addPostModal" tabindex="-1"
     aria-labelledby="addPostModalLabel" aria-hidden="true">
@@ -147,20 +147,17 @@
                 <option value="3">Health & Wellness</option>
               </select>
             </div>
-
             <div class="input-group mb-1">
               <label class="input-group-text"
                 for="inputGroupFile02">Upload</label>
               <input type="file" class="form-control" id="inputGroupFile02">
             </div>
             <small class="d-block text-muted">Max size 3mb</small>
-
             <div class="mb-3">
               <label for="#addPost"></label>
               <textarea name="addPost" id="addPost" class="form-control"
                 rows="10"></textarea>
             </div>
-
           </form>
         </div>
         <div class="modal-footer">
@@ -177,9 +174,22 @@
   <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
     integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
-    crossorigin="anonymous"></script>  
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.ckeditor.com/ckeditor5/34.1.0/classic/ckeditor.js">
+  </script>
 
-  <script>
+
+<script>
+  // ckeditor
+    ClassicEditor
+      .create(document.querySelector('#addPost'))
+      .then(editor => {
+        console.log(editor);
+      })
+      .catch(error => {
+        console.error(error);
+      });
+
     // Get the current year for the copyright
     $('#year').text(new Date().getFullYear());
   </script>
