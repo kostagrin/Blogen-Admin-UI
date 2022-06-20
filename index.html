@@ -158,10 +158,10 @@
               <textarea name="addPost" id="addPost" class="form-control"
                 rows="10"></textarea>
             </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
           </form>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-primary">Save changes</button>
         </div>
       </div>
     </div>
@@ -178,13 +178,15 @@
             aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <div class="mb-3">
-            <label for="category-title" class="form-label">Title</label>
-            <input type="title" class="form-control" id="categoty-title">
-          </div>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-success">Save changes</button>
+          <form>
+            <div class="mb-3">
+              <label for="category-title" class="form-label">Title</label>
+              <input type="title" class="form-control" id="categoty-title">
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-success">Save changes</button>
+            </div>
+          </form>
         </div>
       </div>
     </div>
@@ -201,30 +203,32 @@
             aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <div class="row g-3 mb-3">
-            <div class="col">
+          <form>
+            <div class="row g-3 mb-3">
+              <div class="col">
               <input type="text" class="form-control" placeholder="First name"
                 aria-label="First name">
             </div>
             <div class="col">
               <input type="email" class="form-control" placeholder="Email"
                 aria-label="Email" aria-describedby="emailHelp">
-            </div>
+              </div>
           </div>
-          <div class="row g-3">
+          <div class="row g-3 mb-3">
             <div class="col">
-              <input type="password" class="form-control" placeholder="Passward"
-                aria-label="passward">
+              <input type="password" class="form-control" placeholder="Password"
+                aria-label="password">
             </div>
             <div class="col">
               <input type="password" class="form-control"
                 placeholder="Confirm Passward" aria-label="passward">
-            </div>
+              </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-warning">Save changes</button>
           </div>
         </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-warning">Save changes</button>
-        </div>
+      </form>
       </div>
     </div>
   </div>
