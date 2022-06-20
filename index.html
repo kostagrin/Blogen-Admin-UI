@@ -118,6 +118,58 @@
     </div>
   </section>
 
+ <!-- MODALS -->
+ <!-- \\\\\\\\\\\\\\\\\\|||||||||||||||| -->
+  <!-- ADD POST MODAL -->
+  <div class="modal fade" id="addPostModal" tabindex="-1"
+    aria-labelledby="addPostModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header bg-primary text-white">
+          <h5 class="modal-title" id="addPostModalLabel">Modal title</h5>
+          <button type="button" class="btn-close text-white"
+            data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="title" class="form-label">Title</label>
+              <input type="title" class="form-control" id="title">
+            </div>
+            <div class="mb-3">
+              <label for="#categoty-select">Category</label>
+              <select id="category-select"
+                class="form-select form-select-lg mb-3"
+                aria-label=".form-select-lg">
+                <option selected>Web Development</option>
+                <option value="1">Tech Gadgets</option>
+                <option value="2">Business</option>
+                <option value="3">Health & Wellness</option>
+              </select>
+            </div>
+
+            <div class="input-group mb-1">
+              <label class="input-group-text"
+                for="inputGroupFile02">Upload</label>
+              <input type="file" class="form-control" id="inputGroupFile02">
+            </div>
+            <small class="d-block text-muted">Max size 3mb</small>
+
+            <div class="mb-3">
+              <label for="#addPost"></label>
+              <textarea name="addPost" id="addPost" class="form-control"
+                rows="10"></textarea>
+            </div>
+
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <script
     src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
     integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
