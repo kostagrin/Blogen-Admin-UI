@@ -126,7 +126,7 @@
     <div class="modal-dialog modal-dialog-centered modal-lg">
       <div class="modal-content">
         <div class="modal-header bg-primary text-white">
-          <h5 class="modal-title" id="addPostModalLabel">Modal title</h5>
+          <h5 class="modal-title" id="addPostModalLabel">Add Post</h5>
           <button type="button" class="btn-close text-white"
             data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
@@ -166,6 +166,29 @@
       </div>
     </div>
   </div>
+
+ <!-- ADD CATEGORY MODAL -->
+ <div class="modal fade" id="addCategoryModal" tabindex="-1"
+ aria-labelledby="addCategoryModalLabel" aria-hidden="true">
+ <div class="modal-dialog modal-dialog-centered modal-lg">
+   <div class="modal-content">
+     <div class="modal-header bg-success text-white">
+       <h5 class="modal-title" id="addCategoryModalLabel">Add Category</h5>
+       <button type="button" class="btn-close text-white"
+         data-bs-dismiss="modal" aria-label="Close"></button>
+     </div>
+     <div class="modal-body">
+         <div class="mb-3">
+           <label for="category-title" class="form-label">Title</label>
+           <input type="title" class="form-control" id="categoty-title">
+         </div>     
+     </div>
+     <div class="modal-footer">
+       <button type="button" class="btn btn-success">Save changes</button>
+     </div>
+   </div>
+ </div>
+</div>
 
   <script
     src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
