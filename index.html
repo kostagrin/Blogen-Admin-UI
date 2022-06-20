@@ -167,29 +167,71 @@
     </div>
   </div>
 
- <!-- ADD CATEGORY MODAL -->
- <div class="modal fade" id="addCategoryModal" tabindex="-1"
- aria-labelledby="addCategoryModalLabel" aria-hidden="true">
- <div class="modal-dialog modal-dialog-centered modal-lg">
-   <div class="modal-content">
-     <div class="modal-header bg-success text-white">
-       <h5 class="modal-title" id="addCategoryModalLabel">Add Category</h5>
-       <button type="button" class="btn-close text-white"
-         data-bs-dismiss="modal" aria-label="Close"></button>
-     </div>
-     <div class="modal-body">
-         <div class="mb-3">
-           <label for="category-title" class="form-label">Title</label>
-           <input type="title" class="form-control" id="categoty-title">
-         </div>     
-     </div>
-     <div class="modal-footer">
-       <button type="button" class="btn btn-success">Save changes</button>
-     </div>
-   </div>
- </div>
-</div>
+  <!-- ADD CATEGORY MODAL -->
+  <div class="modal fade" id="addCategoryModal" tabindex="-1"
+    aria-labelledby="addCategoryModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header bg-success text-white">
+          <h5 class="modal-title" id="addCategoryModalLabel">Add Category</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"
+            aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="mb-3">
+            <label for="category-title" class="form-label">Title</label>
+            <input type="title" class="form-control" id="categoty-title">
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-success">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
+  <!-- ADD USER MODAL -->
+  <div class="modal fade" id="addUserModal" tabindex="-1"
+    aria-labelledby="addUserModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header bg-warning text-white">
+          <h5 class="modal-title" id="addUserModalLabel">Add User</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"
+            aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row g-3 mb-3">
+            <div class="col">
+              <input type="text" class="form-control" placeholder="First name"
+                aria-label="First name">
+            </div>
+            <div class="col">
+              <input type="email" class="form-control" placeholder="Email"
+                aria-label="Email" aria-describedby="emailHelp">
+            </div>
+          </div>
+          <div class="row g-3">
+            <div class="col">
+              <input type="password" class="form-control" placeholder="Passward"
+                aria-label="passward">
+            </div>
+            <div class="col">
+              <input type="password" class="form-control"
+                placeholder="Confirm Passward" aria-label="passward">
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-warning">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script
+    src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js">
+  </script>
   <script
     src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
     integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
@@ -202,8 +244,8 @@
   </script>
 
 
-<script>
-  // ckeditor
+  <script>
+    // ckeditor
     ClassicEditor
       .create(document.querySelector('#addPost'))
       .then(editor => {
