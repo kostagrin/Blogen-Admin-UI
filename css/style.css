@@ -1,0 +1,5 @@
+#categories,
+#posts,
+#users {
+  min-height: 55vh;
+}
