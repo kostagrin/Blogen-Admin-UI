@@ -18,7 +18,7 @@
 
 <body>
   <!-- NAVBAR -->
-  <nav class="navbar navbar-expand-sm navbar-dark bg-dark py-2">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-2">
     <div class="container">
       <a class="navbar-brand" href="index.html">Blogen</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -36,15 +36,14 @@
             <a class="nav-link" href="posts.html">Posts</a>
           </li>
           <li class="nav-item px-2">
-            <a class="nav-link"
-              href="categories.html">Categories</a>
+            <a class="nav-link" href="categories.html">Categories</a>
           </li>
           <li class="nav-item px-2">
             <a class="nav-link" href="users.html">Users</a>
           </li>
         </ul>
         <ul class="navbar-nav mb-2 mb-lg-0">
-          <li class="nav-item px-2 dropdown me-3">
+          <li class="nav-item px-2 dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
               role="button" data-bs-toggle="dropdown" aria-expanded="false">
               <i class="bi bi-person-fill"></i>
@@ -67,7 +66,6 @@
               Logout
             </a></li>
         </ul>
-
       </div>
     </div>
   </nav>
@@ -204,31 +202,31 @@
         </div>
 
         <div class="col-md-3">
-          <div class="card mb-2" style="width: 20rem;">
+          <div class="card mb-2">
             <div class="card-body bg-primary text-white text-center">
               <h3 class="card-title">Posts</h4>
-              <h2 class="display-6 mb-4">
-                <i class="bi bi-pencil"></i> 16
-              </h2>
-              <a href="#" class="btn btn-large btn-outline-light">View</a>
+                <h2 class="display-6 mb-4">
+                  <i class="bi bi-pencil"></i> 16
+                </h2>
+                <a href="#" class="btn btn-large btn-outline-light">View</a>
             </div>
-            </div>
-          <div class="card mb-2" style="width: 20rem;">
+          </div>
+          <div class="card mb-2">
             <div class="card-body bg-success text-white text-center">
               <h3 class="card-title">Categories</h4>
-              <h2 class="display-6 mb-4">
-                <i class="bi bi-folder2"></i> 11
-              </h2>
-              <a href="#" class="btn btn-large btn-outline-light">View</a>
+                <h2 class="display-6 mb-4">
+                  <i class="bi bi-folder2"></i> 11
+                </h2>
+                <a href="#" class="btn btn-large btn-outline-light">View</a>
             </div>
-            </div>
-          <div class="card" style="width: 20rem;">
+          </div>
+          <div class="card">
             <div class="card-body bg-warning text-white text-center">
               <h3 class="card-title">Users</h4>
-              <h2 class="display-6 mb-4">
-                <i class="bi bi-people"></i> 7
-              </h2>
-              <a href="#" class="btn btn-large btn-outline-light">View</a>
+                <h2 class="display-6 mb-4">
+                  <i class="bi bi-people"></i> 7
+                </h2>
+                <a href="#" class="btn btn-large btn-outline-light">View</a>
             </div>
           </div>
         </div>
@@ -287,7 +285,8 @@
                 rows="10"></textarea>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-primary">Save changes</button>
+              <button type="button" class="btn btn-primary">Save
+                changes</button>
             </div>
           </form>
         </div>
@@ -312,7 +311,8 @@
               <input type="title" class="form-control" id="categoty-title">
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-success">Save changes</button>
+              <button type="button" class="btn btn-success">Save
+                changes</button>
             </div>
           </form>
         </div>
@@ -334,29 +334,30 @@
           <form>
             <div class="row g-3 mb-3">
               <div class="col">
-              <input type="text" class="form-control" placeholder="First name"
-                aria-label="First name">
-            </div>
-            <div class="col">
-              <input type="email" class="form-control" placeholder="Email"
-                aria-label="Email" aria-describedby="emailHelp">
+                <input type="text" class="form-control" placeholder="First name"
+                  aria-label="First name">
               </div>
-          </div>
-          <div class="row g-3 mb-3">
-            <div class="col">
-              <input type="password" class="form-control" placeholder="Password"
-                aria-label="password">
-            </div>
-            <div class="col">
-              <input type="password" class="form-control"
-                placeholder="Confirm Passward" aria-label="passward">
+              <div class="col">
+                <input type="email" class="form-control" placeholder="Email"
+                  aria-label="Email" aria-describedby="emailHelp">
               </div>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-warning">Save changes</button>
-          </div>
+            </div>
+            <div class="row g-3 mb-3">
+              <div class="col">
+                <input type="password" class="form-control"
+                  placeholder="Password" aria-label="password">
+              </div>
+              <div class="col">
+                <input type="password" class="form-control"
+                  placeholder="Confirm Passward" aria-label="passward">
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-warning">Save
+                changes</button>
+            </div>
         </div>
-      </form>
+        </form>
       </div>
     </div>
   </div>
